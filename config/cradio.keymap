@@ -84,6 +84,16 @@
             key-positions = <18 19>;
             bindings = <&kp SQT>;
         };
+        combo_r_grave {
+            timeout-ms = <25>;
+            key-positions = <28 29>;
+            bindings = <&kp GRAVE>;
+        };
+        combo_r_pipe {
+            timeout-ms = <50>;
+            key-positions = <15 25>;
+            bindings = <&kp PIPE>;
+        };
         combo_r_plus {
             timeout-ms = <50>;
             key-positions = <16 26>;
