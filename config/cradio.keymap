@@ -92,7 +92,7 @@
         };
         // additional symbols
         combo_l_grave {
-            timeout-ms = <25>;
+            timeout-ms = <50>;
             key-positions = <0 1>;
             layers = <BASE SYM NUM>;
             bindings = <&kp GRAVE>;
