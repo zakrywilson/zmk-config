@@ -8,11 +8,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+// Layers
 #define BASE 0
 #define SYM 1
 #define NAV 2
 #define NUM 3
 #define CONF 4
+
+// Custom
+#define MAC_LOCK LG(LC(Q))
+#define MAC_MUTE F10
 
 &mt {
     flavor = "tap-preferred";
@@ -278,7 +283,7 @@
 
         navigation_layer {
             bindings = <
-&none          &none     &none     &none      &none      &none     &kp HOME  &kp UP     &kp END    &none
+&none          &none     &none     &none      &none      &none     &kp HOME  &kp UP     &kp END    &kp MAC_LOCK
 &mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &none
 &mo CONF       &none     &none     &none      &none      &none     &kp RET   &kp PG_UP  &kp PG_DN  &trans
 
@@ -298,9 +303,9 @@
 
         configuration_layer {
             bindings = <
-&bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5    &none         &none         &none     &none  &bootloader
-&none          &none         &none         &none         &bt BT_CLR      &kp C_BRI_UP  &kp C_VOL_UP  &kp F10   &none  &none
-&trans         &none         &none         &none         &none           &kp C_BRI_DN  &kp C_VOL_DN  &kp C_PP  &none  &none
+&bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5    &none         &none         &none         &none  &bootloader
+&none          &none         &none         &none         &bt BT_CLR      &kp C_BRI_UP  &kp C_VOL_UP  &kp MAC_MUTE  &none  &none
+&trans         &none         &none         &none         &none           &kp C_BRI_DN  &kp C_VOL_DN  &kp C_PP      &none  &none
 
 &none  &none                                                             &none  &none
             >;
