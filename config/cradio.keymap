@@ -133,11 +133,11 @@
             layers = <BASE SYM NUM>;
             bindings = <&kp COLON>;
         };
-        combo_r_sqt {
+        combo_r_dqt {
             timeout-ms = <25>;
             key-positions = <18 19>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp SQT>;
+            bindings = <&kp DQT>;
         };
         combo_r_tilde {
             timeout-ms = <25>;
