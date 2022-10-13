@@ -128,13 +128,13 @@
             bindings = <&kp N9>;
         };
         combo_r_colon {
-            timeout-ms = <25>;
+            timeout-ms = <20>;
             key-positions = <8 9>;
             layers = <BASE SYM NUM>;
             bindings = <&kp COLON>;
         };
         combo_r_dqt {
-            timeout-ms = <25>;
+            timeout-ms = <20>;
             key-positions = <18 19>;
             layers = <BASE SYM NUM>;
             bindings = <&kp DQT>;
