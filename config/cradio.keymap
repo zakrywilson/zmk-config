@@ -127,6 +127,18 @@
             layers = <BASE>;
             bindings = <&kp N9>;
         };
+        combo_r_lbrc {
+            timeout-ms = <20>;
+            key-positions = <7 8>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp LBRC>;
+        };
+        combo_r_rbrc {
+            timeout-ms = <20>;
+            key-positions = <17 18>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp RBRC>;
+        };
         combo_r_colon {
             timeout-ms = <20>;
             key-positions = <8 9>;
