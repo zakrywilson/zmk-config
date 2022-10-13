@@ -264,11 +264,11 @@
 
         base_layer {
             bindings = <
-&kp Q       &kp W  &kp F  &kp P  &kp G    &kp J  &kp L  &kp U     &kp Y   &kp SEMI
-&kp A       &kp R  &kp S  &kp T  &kp D    &kp H  &kp N  &kp E     &kp I   &kp O
-&mt LALT Z  &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA &kp DOT &lt NAV SLASH
+&kp Q       &kp W  &kp F  &kp P  &kp G    &kp J  &kp L  &kp U      &kp Y    &kp SEMI
+&kp A       &kp R  &kp S  &kp T  &kp D    &kp H  &kp N  &kp E      &kp I    &kp O
+&mt LALT Z  &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA  &kp DOT  &lt NAV SLASH
 
-&kp LSHFT  &mth LCMD ESC                  &lth SYM BSPC  &mt LCTRL SPACE
+&kp LSHFT  &mth LCMD ESC                   &lth SYM BSPC  &mt LCTRL SPACE
             >;
         };
 
@@ -278,7 +278,7 @@
 &mt LCTRL ESC  &kp N4  &kp N5  &kp N6  &kp DOT       &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SQT
 &mt LALT N0    &kp N1  &kp N2  &kp N3  &kp COLON     &kp BSLH   &kp UNDER  &kp LT    &kp GT    &trans
 
-&mt LSHFT SPACE  &mt LCMD N0                         &trans  &kp LCTRL
+&mt LSHFT SPACE  &mt LCMD N0                        &trans  &kp LCTRL
             >;
         };
 
@@ -298,7 +298,7 @@
 &kp LCTRL  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp MINUS    &kp N4  &kp N5  &kp N6  &kp N0
 &kp F6     &kp F7    &kp F8    &kp F9     &kp F10    &kp LS(TAB)  &kp N1  &kp N2  &kp N3  &kp SLASH
 
-&kp LSHFT &kp LCMD                                  &trans  &mt LSHFT SPACE
+&kp LSHFT &kp LCMD                                   &trans  &mt LSHFT SPACE
             >;
         };
 
