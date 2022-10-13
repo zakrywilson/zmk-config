@@ -286,9 +286,9 @@
 
         symbol_layer {
             bindings = <
-&kp TAB        &kp N7  &kp N8  &kp N9  &kp COMMA     &kp TILDE  &kp EQUAL  &kp LPAR  &kp RPAR  &kp COLON
-&mt LCTRL ESC  &kp N4  &kp N5  &kp N6  &kp DOT       &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SQT
-&mt LALT N0    &kp N1  &kp N2  &kp N3  &kp COLON     &kp BSLH   &kp UNDER  &kp LT    &kp GT    &trans
+&kp TAB        &kp N7  &kp N8  &kp N9  &kp AMPS     &kp TILDE  &kp EQUAL  &kp LPAR  &kp RPAR  &kp COLON
+&mt LCTRL ESC  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SQT
+&mt LALT N0    &kp N1  &kp N2  &kp N3  &kp EXCL     &kp BSLH   &kp UNDER  &kp LT    &kp GT    &trans
 
 &mt LSHFT SPACE  &mt LCMD N0                        &trans  &kp LCTRL
             >;
