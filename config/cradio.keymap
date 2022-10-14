@@ -127,17 +127,17 @@
             layers = <BASE>;
             bindings = <&kp N9>;
         };
-        combo_r_lbrc {
+        combo_r_underscore {
+            timeout-ms = <20>;
+            key-positions = <6 7>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp UNDER>;
+        };
+        combo_r_exclam {
             timeout-ms = <20>;
             key-positions = <7 8>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp LBRC>;
-        };
-        combo_r_rbrc {
-            timeout-ms = <20>;
-            key-positions = <17 18>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp RBRC>;
+            bindings = <&kp EXCL>;
         };
         combo_r_colon {
             timeout-ms = <20>;
@@ -145,41 +145,65 @@
             layers = <BASE SYM NUM>;
             bindings = <&kp COLON>;
         };
+        combo_r_plus_h {
+            timeout-ms = <20>;
+            key-positions = <15 16>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp PLUS>;
+        };
+        combo_r_minus_h {
+            timeout-ms = <20>;
+            key-positions = <16 17>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp MINUS>;
+        };
+        combo_r_equal_h {
+            timeout-ms = <20>;
+            key-positions = <17 18>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp EQUAL>;
+        };
         combo_r_dqt {
             timeout-ms = <20>;
             key-positions = <18 19>;
             layers = <BASE SYM NUM>;
             bindings = <&kp DQT>;
         };
+        combo_r_lbrc {
+            timeout-ms = <20>;
+            key-positions = <27 18>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp LBRC>;
+        };
+        combo_r_rbrc {
+            timeout-ms = <20>;
+            key-positions = <17 28>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp RBRC>;
+        };
         combo_r_tilde {
-            timeout-ms = <25>;
-            key-positions = <28 29>;
+            timeout-ms = <20>;
+            key-positions = <27 28>;
             layers = <BASE SYM NUM>;
             bindings = <&kp TILDE>;
         };
-        combo_r_pipe {
-            timeout-ms = <50>;
+        combo_r_qmark {
+            timeout-ms = <20>;
+            key-positions = <28 29>;
+            layers = <BASE SYM NUM>;
+            bindings = <&kp QMARK>;
+        };
+        combo_r_bslh {
+            timeout-ms = <20>;
             key-positions = <15 25>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp PIPE>;
+            bindings = <&kp BSLH>;
         };
-        combo_r_plus {
+        combo_r_pipe {
             timeout-ms = <50>;
             key-positions = <16 26>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp PLUS>;
-        };
-        combo_r_minus {
-            timeout-ms = <50>;
-            key-positions = <17 27>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp MINUS>;
-        };
-        combo_r_equal {
-            timeout-ms = <50>;
-            key-positions = <18 28>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp EQUAL>;
+            bindings = <&kp PIPE>;
         };
         // misc modifiers and whitespace
         combo_l_del {
@@ -197,12 +221,6 @@
         combo_l_bksp {
             timeout-ms = <50>;
             key-positions = <13 14>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp BSPC>;
-        };
-        combo_r_bksp {
-            timeout-ms = <50>;
-            key-positions = <15 16>;
             layers = <BASE SYM NUM>;
             bindings = <&kp BSPC>;
         };
@@ -230,23 +248,11 @@
             layers = <BASE SYM NUM>;
             bindings = <&kp RET>;
         };
-        combo_r_tab {
-            timeout-ms = <50>;
-            key-positions = <25 26>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp TAB>;
-        };
         combo_r_ent {
             timeout-ms = <50>;
             key-positions = <26 27>;
             layers = <BASE SYM NUM>;
             bindings = <&kp RET>;
-        };
-        combo_r_shift_ent {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp LS(RET)>;
         };
     };
 
