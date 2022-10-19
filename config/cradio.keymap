@@ -139,11 +139,11 @@
             layers = <BASE SYM NUM>;
             bindings = <&kp EXCL>;
         };
-        combo_r_colon {
+        combo_r_double_quote {
             timeout-ms = <20>;
             key-positions = <8 9>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp COLON>;
+            bindings = <&kp DQT>;
         };
         combo_r_plus_h {
             timeout-ms = <20>;
@@ -163,11 +163,11 @@
             layers = <BASE SYM NUM>;
             bindings = <&kp EQUAL>;
         };
-        combo_r_dqt {
+        combo_r_colon {
             timeout-ms = <20>;
             key-positions = <18 19>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp DQT>;
+            bindings = <&kp COLON>;
         };
         combo_r_lbrc {
             timeout-ms = <20>;
@@ -292,8 +292,8 @@
 
         symbol_layer {
             bindings = <
-&kp TAB       &kp N7  &kp N8  &kp N9  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp COLON
-&mt LCTRL N0  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SQT
+&kp TAB       &kp N7  &kp N8  &kp N9  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp SQT
+&mt LCTRL N0  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SEMI
 &mt LALT N0   &kp N1  &kp N2  &kp N3  &kp EXCL     &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &trans
 
 &mt LSHFT SPACE  &mt LCMD N0                       &trans  &kp LCTRL
