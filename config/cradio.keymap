@@ -286,7 +286,7 @@
 &kp A        &kp R  &kp S  &kp T  &kp D    &kp H  &kp N  &kp E      &kp I    &kp O
 &mt LALT Z   &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA  &kp DOT  &lt NAV SLASH
 
-&kp LSHFT  &mth LCMD ESC                   &lth SYM BSPC  &mt LCTRL SPACE
+&kp LCMD  &kp LSHFT  &mth LCTRL ESC        &lth SYM BSPC  &kp SPACE  &kp LALT
             >;
         };
 
@@ -296,7 +296,7 @@
 &mt LCTRL N0  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SEMI
 &mt LALT N0   &kp N1  &kp N2  &kp N3  &kp EXCL     &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &trans
 
-&mt LSHFT SPACE  &mt LCMD N0                       &trans  &kp LCTRL
+&trans  &mt LSHFT SPACE  &mth LCTRL N0             &trans  &kp LCTRL  &trans
             >;
         };
 
@@ -306,7 +306,8 @@
 &mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &none
 &mo CONF       &none     &none     &none      &none      &none     &kp RET   &kp PG_UP  &kp PG_DN  &trans
 
-&mt LSHFT SPACE  &kp LCMD                                &mo NUM  &mt LCTRL SPACE
+
+&trans  &kp LSHFT SPACE  &trans                          &mo NUM  &trans  &trans
             >;
         };
 
@@ -316,7 +317,8 @@
 &kp LCTRL  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp MINUS    &kp N4  &kp N5  &kp N6  &kp N0
 &kp F6     &kp F7    &kp F8    &kp F9     &kp F10    &kp LS(TAB)  &kp N1  &kp N2  &kp N3  &kp SLASH
 
-&kp LSHFT &kp LCMD                                   &trans  &mt LSHFT SPACE
+
+&trans  &kp LSHFT  &trans                            &trans  &kp LSHFT SPACE  &trans
             >;
         };
 
@@ -326,7 +328,7 @@
 &none          &none         &none         &none         &bt BT_CLR      &kp C_BRI_UP  &kp C_VOL_UP  &kp MAC_MUTE  &none  &none
 &trans         &none         &none         &none         &none           &kp C_BRI_DN  &kp C_VOL_DN  &kp C_PP      &none  &none
 
-&none  &bootloader                                                       &bootloader  &none
+&none  &none  &bootloader                                                &bootloader  &none  &none
             >;
         };
     };
