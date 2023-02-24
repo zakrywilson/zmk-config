@@ -254,7 +254,7 @@
             bindings = <&kp RET>;
         };
         combo_r_ent {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <26 27>;
             layers = <BASE SYM NUM>;
             bindings = <&kp RET>;
