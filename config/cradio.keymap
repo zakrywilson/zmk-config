@@ -127,59 +127,35 @@
             layers = <BASE>;
             bindings = <&kp N9>;
         };
-        combo_r_underscore {
-            timeout-ms = <20>;
-            key-positions = <6 7>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp UNDER>;
-        };
-        combo_r_exclam {
-            timeout-ms = <20>;
-            key-positions = <7 8>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp EXCL>;
-        };
-        combo_r_double_quote {
-            timeout-ms = <20>;
+        combo_r_colon {
+            timeout-ms = <50>;
             key-positions = <8 9>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp DQT>;
+            bindings = <&kp COLON>;
         };
         combo_r_plus_h {
-            timeout-ms = <20>;
+            timeout-ms = <15>;
             key-positions = <15 16>;
             layers = <BASE SYM NUM>;
             bindings = <&kp PLUS>;
         };
         combo_r_minus_h {
-            timeout-ms = <20>;
+            timeout-ms = <15>;
             key-positions = <16 17>;
             layers = <BASE SYM NUM>;
             bindings = <&kp MINUS>;
         };
         combo_r_equal_h {
-            timeout-ms = <20>;
+            timeout-ms = <15>;
             key-positions = <17 18>;
             layers = <BASE SYM NUM>;
             bindings = <&kp EQUAL>;
         };
-        combo_r_colon {
-            timeout-ms = <20>;
+        combo_r_double_quote {
+            timeout-ms = <15>;
             key-positions = <18 19>;
             layers = <BASE SYM NUM>;
-            bindings = <&kp COLON>;
-        };
-        combo_r_lbrc {
-            timeout-ms = <20>;
-            key-positions = <27 18>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp LBRC>;
-        };
-        combo_r_rbrc {
-            timeout-ms = <20>;
-            key-positions = <17 28>;
-            layers = <BASE SYM NUM>;
-            bindings = <&kp RBRC>;
+            bindings = <&kp DQT>;
         };
         combo_r_tilde {
             timeout-ms = <20>;
@@ -249,7 +225,7 @@
             bindings = <&kp RET>;
         };
         combo_r_ent {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <26 27>;
             layers = <BASE SYM NUM>;
             bindings = <&kp RET>;
@@ -271,7 +247,7 @@
             label = "LAYER_TAP_HOLD_PREF";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
@@ -282,7 +258,7 @@
 
         base_layer {
             bindings = <
-&kp Q        &kp W  &kp F  &kp P  &kp G    &kp J  &kp L  &kp U      &kp Y    &kp SQT
+&kp Q        &kp W  &kp F  &kp P  &kp G    &kp J  &kp L  &kp U      &kp Y    &kp SEMI
 &kp A        &kp R  &kp S  &kp T  &kp D    &kp H  &kp N  &kp E      &kp I    &kp O
 &mt LALT Z   &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA  &kp DOT  &lt NAV SLASH
 
@@ -292,8 +268,8 @@
 
         symbol_layer {
             bindings = <
-&kp TAB       &kp N7  &kp N8  &kp N9  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp SQT
-&mt LCTRL N0  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SEMI
+&kp TAB       &kp N7  &kp N8  &kp N9  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp COLON
+&mt LCTRL N0  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SQT
 &mt LALT N0   &kp N1  &kp N2  &kp N3  &kp EXCL     &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &trans
 
 &mt LSHFT SPACE  &mt LCMD N0                       &trans  &kp LCTRL
