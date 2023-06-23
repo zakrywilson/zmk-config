@@ -289,9 +289,9 @@
             bindings = <
 &kp Q        &kp W  &kp F  &kp P  &kp G    &kp J  &kp L  &kp U      &kp Y    &kp SEMI      
 &kp A        &kp R  &kp S  &kp T  &kp D    &kp H  &kp N  &kp E      &kp I    &kp O        
-&mt LALT Z   &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA  &kp DOT  &lt NAV SLASH
+&mt LALT Z   &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA  &kp DOT  &lt NUM SLASH
 
-&kp LCMD  &kp LSHFT  &mth LCTRL ESC        &lth SYM BSPC  &kp SPACE  &mo NUM
+&kp LCMD  &kp LSHFT  &mth LCTRL ESC        &lth SYM BSPC  &kp SPACE  &mo NAV
             >;
         };
 
@@ -307,8 +307,8 @@
 
         navigation_layer {
             bindings = <
-&none          &none     &none     &none      &none      &none     &kp HOME  &kp UP     &kp END    &kp MAC_LOCK
-&mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &none       
+&kp MAC_LOCK   &none     &none     &none      &none      &none     &none     &kp UP     &none      &kp HOME
+&mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp END
 &mo CONF       &none     &none     &none      &none      &none     &kp RET   &kp PG_UP  &kp PG_DN  &trans      
 
 &trans  &mt LSHFT SPACE  &mth LCTRL ESC                  &mo FUNC  &mt LSHFT SPACE  &trans
