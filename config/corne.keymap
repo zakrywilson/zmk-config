@@ -12,15 +12,20 @@
 #define BASE 0
 #define SYM 1
 #define NAV 2
-#define FUNC 3
-#define CONF 4
-#define NUM 5
+#define CONF 3
+#define NUM 4
 
 // Custom
 #define MAC_LOCK LG(LC(Q))
 #define MAC_MUTE F10
 
 &mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+    quick-tap-ms = <150>;
+};
+
+&lt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
     quick-tap-ms = <150>;
@@ -289,9 +294,9 @@
             bindings = <
 &kp Q        &kp W  &kp F  &kp P  &kp G    &kp J  &kp L  &kp U      &kp Y    &kp SEMI      
 &kp A        &kp R  &kp S  &kp T  &kp D    &kp H  &kp N  &kp E      &kp I    &kp O        
-&mt LALT Z   &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA  &kp DOT  &lt NUM SLASH
+&mt LALT Z   &kp X  &kp C  &kp V  &kp B    &kp K  &kp M  &kp COMMA  &kp DOT  &mt LCTRL SLASH
 
-&kp LCMD  &kp LSHFT  &mth LCTRL ESC        &lth SYM BSPC  &kp SPACE  &mo NAV
+&kp LCMD  &kp LSHFT  &mth LCTRL ESC        &lth SYM BSPC  &lt NAV SPACE  &mo NUM
             >;
         };
 
@@ -299,29 +304,19 @@
             bindings = <
 &kp TAB       &kp N7  &kp N8  &kp N9  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp SEMI
 &mt LCTRL N0  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SQT
-&mt LALT N0   &kp N1  &kp N2  &kp N3  &kp EXCL     &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &trans  
+&mt LALT N0   &kp N1  &kp N2  &kp N3  &kp EXCL     &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &kp SLASH  
 
-&trans  &mt LSHFT SPACE  &mth LCTRL N0             &trans  &kp LCTRL  &trans
+&trans  &mt LSHFT SPACE  &mth LCTRL N0             &trans  &kp LSHFT  &trans
             >;
         };
 
         navigation_layer {
             bindings = <
-&kp MAC_LOCK   &none     &none     &none      &none      &none     &none     &kp UP     &none      &kp HOME
-&mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp END
-&mo CONF       &none     &none     &none      &none      &none     &kp RET   &kp PG_UP  &kp PG_DN  &trans      
+&kp MAC_LOCK   &none     &none     &none      &none      &none     &kp HOME  &kp UP     &kp END    &kp PG_UP
+&mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN
+&mo CONF       &none     &none     &none      &none      &none     &kp RET   &kp PG_UP  &kp PG_DN  &mo CONF
 
-&trans  &mt LSHFT SPACE  &mth LCTRL ESC                  &mo FUNC  &mt LSHFT SPACE  &trans
-            >;
-        };
-
-        function_layer {
-            bindings = <
-&kp F1     &kp F2    &kp F3    &kp F4     &kp F5     &kp TAB      &kp N7  &kp N8  &kp N9  &kp COLON
-&kp LCTRL  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp MINUS    &kp N4  &kp N5  &kp N6  &kp N0   
-&kp F6     &kp F7    &kp F8    &kp F9     &kp F10    &kp LS(TAB)  &kp N1  &kp N2  &kp N3  &kp SLASH
-
-&trans  &kp LSHFT  &kp LCTRL                         &trans  &mt LSHFT SPACE  &trans
+&trans  &mt LSHFT SPACE  &mth LCTRL ESC                  &none  &trans  &none
             >;
         };
 
@@ -329,9 +324,9 @@
             bindings = <
 &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5    &none         &none         &none         &none  &none
 &none          &none         &none         &none         &bt BT_CLR      &kp C_BRI_UP  &kp C_VOL_UP  &kp MAC_MUTE  &none  &none
-&trans         &none         &none         &none         &none           &kp C_BRI_DN  &kp C_VOL_DN  &kp C_PP      &none  &none
+&trans         &none         &none         &none         &bootloader     &kp C_BRI_DN  &kp C_VOL_DN  &kp C_PP      &none  &none
 
-&none  &none  &bootloader                                                &bootloader  &none  &none
+&none  &none  &none                                                      &none  &none  &none
             >;
 
         };
