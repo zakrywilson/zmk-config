@@ -312,11 +312,11 @@
 
         navigation_layer {
             bindings = <
-&kp MAC_LOCK   &none     &none     &none      &none      &none     &kp HOME  &kp UP     &kp END    &kp PG_UP
-&mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN
-&mo CONF       &none     &none     &none      &none      &none     &kp RET   &kp PG_UP  &kp PG_DN  &mo CONF
+&kp MAC_LOCK   &none     &none     &none      &none      &none     &none     &kp UP     &none      &none
+&mt LCTRL ESC  &kp RALT  &kp LCMD  &kp LSHFT  &kp DEL    &kp BSPC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp DEL
+&none          &none     &none     &none      &none      &kp HOME  &kp RET   &kp PG_UP  &kp PG_DN  &kp END
 
-&trans  &mt LSHFT SPACE  &mth LCTRL ESC                  &none  &trans  &none
+&trans  &mt LSHFT SPACE  &mth LCTRL ESC                  &mo CONF  &trans  &none
             >;
         };
 
