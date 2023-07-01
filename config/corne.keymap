@@ -302,9 +302,9 @@
 
         symbol_layer {
             bindings = <
-&kp TAB       &kp N7  &kp N8  &kp N9  &kp COLON    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp SEMI
+&kp TAB       &kp N7  &kp N8  &kp N9  &kp EXCL     &kp SEMI   &kp SQT    &kp LPAR  &kp RPAR  &kp SEMI
 &mt LCTRL N0  &kp N4  &kp N5  &kp N6  &kp PIPE     &kp GRAVE  &kp MINUS  &kp LBKT  &kp RBKT  &kp SQT
-&mt LALT N0   &kp N1  &kp N2  &kp N3  &kp EXCL     &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &kp SLASH  
+&mt LALT N0   &kp N1  &kp N2  &kp N3  &kp COLON    &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &kp SLASH
 
 &trans  &mt LSHFT SPACE  &mth LCTRL N0             &trans  &kp LSHFT  &trans
             >;
